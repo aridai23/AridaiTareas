@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Contacto</title>
+    <link rel="stylesheet" href="css/estform.css">
+</head>
+<body>
+    <div id="contenedor-formulario">
+        <aside id="logo-formulario">
+            <img src="imagenes/Rare-Beauty-Logo.png" width="180px" height="100px">
+        </aside>
+
+        <h2>Formulario de Contacto</h2>
+
+        <form>
+            <div class="grupo-formulario nombre-apellidos">
+                <label for="#">Nombre Completo</label><br><br>
+                <input type="text" id="nombre" name="nombre" required placeholder="Nombre(s)">&nbsp;
+                <input type="text" id="apellidos" name="apellidos" required placeholder="Apellidos">
+            </div>
+
+            <div class="grupo-formulario direccion">
+                <label for="#">Direccion</label><br><br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="text" id="direccion" name="direccion" required placeholder="Dirección">
+            </div>
+
+            <div class="grupo-formulario ubicacion">
+                <select id="municipio" name="municipio" required>
+                    <option value="chimalhuacan">Chimalhuacán</option>
+                    <option value="neza">Neza</option>
+                    <option value="iztapalapa">Iztapalapa</option>
+                </select>
+
+                <select id="estado" name="estado" required>
+                    <option value="CDMX">CDMX</option>
+                    <option value="Estado de Mexico">Estado de México</option>
+                    <option value="Guerrero">Guerrero</option>
+                </select>
+
+                <input type="text" id="cp" name="cp" required placeholder="C.P.">
+            </div>
+
+            <div class="grupo-formulario telefono-fecha">
+                <input type="text" id="telefono" name="telefono" required placeholder="Teléfono">
+                <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required>
+            </div>
+
+            <div class="grupo-casilla">
+                <input type="checkbox" id="terminos" name="terminos" required>
+                <label for="terminos">Acepto Términos</label>
+            </div>
+
+            <div class="grupo-formulario comentarios">
+                <textarea id="comentarios" name="comentarios" rows="4" required placeholder="Comentarios Adicionales"></textarea>
+            </div>
+
+            <button type="submit" class="boton">Remitir</button>
+        </form>
+    </div>
+</body>
+</html>
+
